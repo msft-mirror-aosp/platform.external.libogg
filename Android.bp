@@ -13,8 +13,10 @@ cc_library_static {
     sdk_version: "14",
     sanitize: {
         integer_overflow: true,
+        misc_undefined: ["bounds"],
         diag: {
             integer_overflow: true,
+            misc_undefined: ["bounds"],
         },
     },
 }
